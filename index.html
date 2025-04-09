@@ -9,6 +9,95 @@
 </head>
 
 <body>
+  <header class="header">
+    <div class="header__inner">
+      <div class="header__card card">
+        <div class="header__container container">
+          <nav class="header__menu menu">
+            <a href="/" class="header__menu-logo logo"><img src="public/images/logo/logo-small.svg" alt="Атмосфера Дома"
+                class="logo_image"></a>
+            <ul class="header__menu-list tablet-hidden">
+              <li class="header__menu-item">
+                <a href="/" class="header__menu-link">
+                  <p>О нас</p>
+                </a>
+              </li>
+              <li class="header__menu-item">
+                <a href="/" class="header__menu-link">
+                  <p>Магазины</p>
+                </a>
+              </li>
+              <li class="header__menu-item">
+                <a href="/" class="header__menu-link">
+                  <p>Арендаторам</p>
+                </a>
+              </li>
+              <li class="header__menu-item">
+                <a href="/" class="header__menu-link">
+                  <p>Новости и акции</p>
+                </a>
+              </li>
+              <li class="header__menu-item">
+                <a href="/" class="header__menu-link">
+                  <p>Контакты</p>
+                </a>
+              </li>
+            </ul>
+            <a href="/" class="header__menu-location mobile-small-hidden">Красноярск, ул. А. Вавилова 1, ст.39</a>
+            <button class="header__menu-burger-button burger-button tablet-visible" onclick="mobileOverlay.showModal()"><span class="visually-hidden">Открыть меню навигации</span></button>
+          </nav>
+          <a href="/" class="header__logo logo">
+            <img class="logo__image" src="/images/logo/logo-big.svg" alt="Атмосфера Дома" width="806" height="297">
+          </a>
+          <div class="header__info">
+            <ul class="header__info-list">
+              <li class="header__info-item card card--small">
+                <a href="/">
+                  <h2>45 тыс. м²</h2>
+                  <span>общая площадь гипермаркета</span>
+                </a>
+              </li>
+              <li class="header__info-item card card--small">
+                <a href="/">
+                  <h2>1.5 тыс.</h2>
+                  <span>парковочных
+                    мест</span>
+                </a>
+              </li>
+              <li class="header__info-item card card--small">
+                <a href="/">
+                  <h2>2</h2>
+                  <span>этажа магазинов
+                    на любой вкус</span>
+                </a>
+              </li>
+              <li class="header__info-item card card--small">
+                <a href="/">
+                  <h2>190</h2>
+                  <span>магазинов с
+                    широким выбором</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <dialog class="mobile-overlay tablet-visible" id="mobileOverlay">
+    <form action="dialog" class="mobile-overlay__close-button-wrapper">
+      <button class="mobile-overlay__close-button" type="submit"><span class="visually-hidden">Закрыть меню навигации</span></button>
+    </form>
+    <div class="mobile-overlay__body">
+      <ul class="mobile-overlay__list">
+        <li class="mobile-overlay__item"><a href="/" class="mobile-overlay__link"><p>О нас</p></a></li>
+        <li class="mobile-overlay__item"><a href="/" class="mobile-overlay__link"><p>Магзины</p></a></li>
+        <li class="mobile-overlay__item"><a href="/" class="mobile-overlay__link"><p>Арендаторам</p></a></li>
+        <li class="mobile-overlay__item"><a href="/" class="mobile-overlay__link"><p>Новости и акции</p></a></li>
+        <li class="mobile-overlay__item"><a href="/" class="mobile-overlay__link"><p>Контакты</p></a></li>
+      </ul>
+    </div>
+  </dialog>
   <script type="module" src="/src/main.ts"></script>
 </body>
 
