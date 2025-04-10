@@ -1,0 +1,79 @@
+.contact{
+    padding-inline: 20px;
+    background-image: url(/public/images/backgrounds/bg-contacts.png);
+    background-size: cover;
+    position: relative;
+    &__inner{
+        background-color: var(--color-light);
+        display: flex;
+        flex-wrap: wrap;
+        gap: 36px;
+        padding: 46px;
+    }
+    &__title, &__info{
+        flex: 1 1 100%;
+    }
+    &__input-field{
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+
+        @include mobile{
+            flex: 1 1 100%;
+        }
+
+        &-message{
+            display: flex;
+            flex-direction: column;
+            flex: 1 1 100%;
+        }
+    }
+
+    &__input{
+        border-radius: 20px;
+        height: 78px;
+
+        @include laptop{
+            height: 74px;
+        }
+
+        @include tablet{
+            height: 66px;
+        }
+
+        @include mobile-small{
+            height: 64px;
+        }
+
+        &-message{
+            border-radius: 20px;
+            resize: none;
+            height: 216px;
+        }
+    }
+    &__button{
+        @include reset-button;
+
+        height: 64px;
+        max-width: 239px;
+        flex-shrink: 0;
+        @include tablet{
+            height: 62px;
+        }
+
+        padding-block: 22px;
+        padding-inline: 36px;
+        background-color: var(--color-brown-light);
+        color: var(--color-light);
+
+        &-field{
+            display: flex;
+            gap: 24px;
+            @include mobile{
+                flex-direction: column;
+            }
+        }
+    }
+    &__policy{
+    }
+}

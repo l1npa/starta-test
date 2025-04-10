@@ -153,6 +153,7 @@
         position: relative;
         width: 100%;
         top: 95px;
+        z-index: 1;
         @include mobile{
             top: 0px;
         }
