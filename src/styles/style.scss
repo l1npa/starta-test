@@ -6,4 +6,7 @@
 @import './config/utils';
 @import './config/global';
 
-@import './blocks/burger-button','./blocks/header.scss';
+@import './blocks/burger-button',
+        './blocks/list',
+        './blocks/header',
+        './blocks/shops';
