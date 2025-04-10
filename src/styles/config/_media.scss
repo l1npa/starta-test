@@ -6,7 +6,7 @@ $mobile: 767px;
 $mobile-small: 413px;
 
 @mixin desktop{
-    @media (max-width: $dektop){
+    @media (max-width: $desktop){
         @content;
     }
 }

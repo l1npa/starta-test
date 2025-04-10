@@ -1,4 +1,11 @@
 @font-face {
-    font-family: 'Gogh-bold';
-    src: url(/public/fonts/gogh.woff2) format('woff2');
+    font-family: 'Gogh';
+    src: url(/public/fonts/Gogh-Medium.woff2) format('woff2');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Gogh';
+    src: url(/public/fonts/Gogh-Bold.woff2) format('woff2');
+    font-weight: 700;
 }
