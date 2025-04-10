@@ -101,6 +101,34 @@
     </div>
     </div>
   </div>
+  <div class="contact">
+    <form class="contact__inner container card" method="post">
+      <h2 class="contact__title"></h2>
+      <span class="contact__info"></span>
+      <div class="contact__input--field">
+      <label for="name" class="contact__label">Ваше имя</label>
+      <input type="text" name="name" id="name" class="contact__input card card--small">
+      </div>
+      <div class="contact__input--field">
+      <label for="tel" class="contact__label">Телефон</label>
+      <input type="tel" name="tel" id="tel" class="contact__input card card--small" placeholder="+7(000)000-00-00">
+      </div>
+      <div class="contact__input--field">
+      <label for="emali" class="contact__label">Эл. почта</label>
+      <input type="email" name="email" id="email" class="contact__input card card--small" placeholder="name@mail.ru">
+      </div>
+      <div class="contact__input--field">
+        <label for="message">Сообщение</label>
+        <textarea name="message" id="message" class="contact__input"></textarea>
+      </div>
+      <div class="contact__input--field">
+        <button type="submit" class="contact__button">Оставить заявку</button>
+        <span class="contact__policy">
+          Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с <a class="contact__policy-link">политикой конфиденциальности</a>
+        </span>
+      </div>
+    </form>
+  </div>
   <dialog class="mobile-overlay tablet-visible" id="mobileOverlay">
     <form action="dialog" class="mobile-overlay__close-button-wrapper">
       <button class="mobile-overlay__close-button" type="submit"><span class="visually-hidden">Закрыть меню
